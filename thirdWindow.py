@@ -1,3 +1,5 @@
+# #!
+
 from tkinter import *
 import tkinter as tk
 
@@ -5,6 +7,7 @@ class ThirdWindow():
 
     def __init__(self, window3):
         """
+        ^
         """
         self.window3 = window3
 
@@ -22,9 +25,19 @@ class ThirdWindow():
         """
         ^ listBox creation
         """
-        lista = ["mela", "banana", "mela", "ciliegia", "pera", "mela", "pera", "pera",  "ciliegia", "pera", "fragola"]
+        listaMateriali = ["mela", "banana", "mela", "ciliegia", "pera", "mela", "pera", "pera",  "ciliegia", "pera", "fragola"]
+        listaPrezzi = ["0,50", "0,50","0,50","0,50","0,50","0,50","0,50","0,50","0,50","0,50","0,50"]
         lb1 = tk.Listbox(self.window3, selectmode=EXTENDED, height=10, width=50,font=('helvetica', 13))
-        for i in range(len(lista)):
-            lb1.insert(i, lista[i])
-            print(i)
-        lb1.pack()
+        #
+        for i in range(len(listaMateriali)):
+            materiale = "- " + listaMateriali[i] + " "*(30 - len(listaMateriali[i])) + listaPrezzi[i]+"£"
+            lb1.insert(i, materiale)
+        lb1.grid()
+
+    def button2(self):
+        """
+        ^ button creation
+        """
+        button = tk.Button(self.window3, text='Aggiungi al carrello',width = 15, height = 3, bg="purple",fg="black", activebackground="purple", activeforeground="black", font=('helvetica', 12, 'bold'))
+        button.grid(row=1, column=0, sticky="S", pady=40)
+        

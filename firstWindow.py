@@ -6,10 +6,12 @@
 
 from tkinter import *
 import tkinter as tk
+from tkinter.ttk import *
+#!
 from secondWindow import SecondWindow
 from thirdWindow import ThirdWindow
 
-def finestraPagamento ():
+def finestraPagamento():
     """
     ^ secondWindow creation
     """
@@ -18,7 +20,7 @@ def finestraPagamento ():
     sW.grafica2()
     window2.mainloop()
 
-def finestraAl ():
+def finestraAl():
     """
     ^ secondWindow creation
     """
@@ -26,12 +28,14 @@ def finestraAl ():
     sW3 = ThirdWindow(window3)
     sW3.grafica3()
     sW3.ListBox()
+    sW3.button2()
     window3.mainloop()
         
 class principale():
 
     def __init__(self, window):
         """
+        ^
         """
         self.window = window
 
@@ -50,7 +54,7 @@ class principale():
         self.window.configure(bg='grey') #! set window background color
         self.window.geometry('500x400') #! window size
         self.window.resizable(False, False) #! you cannot change the size of the window
-        self.window.iconbitmap("icona.ico") #! icon window
+        #self.window.iconbitmap("Pk.ico") #! icon window
 
     """def centro(window):
         
@@ -83,13 +87,13 @@ class principale():
         button3 = tk.Button(self.window, text='contattaci',width = 10, height = 3, bg="purple",fg="black", activebackground="purple", activeforeground="black", font=('helvetica', 12, 'bold'))
         button3.grid(row=1, column=0, sticky="W", pady=40, padx=40)
 
-        button4 = tk.Button(self.window, text='Alimentazione',width = 15, height = 3, command=finestraAl,  bg="grey",fg="purple", activebackground="grey", activeforeground="purple", font=('helvetica', 10, 'bold'))
+        button4 = tk.Button(self.window, text='Alimentazione',width = 15, height = 3, command=finestraAl,  bg="grey",fg="purple", activebackground="grey", activeforeground="purple", font=('helvetica', 13, 'bold'))
         button4.grid(row=0, column=0, sticky="W", padx=80)
         
-        button5 = tk.Button(self.window, text='Sport',width = 15, height = 3, bg="grey",fg="purple", activebackground="grey", activeforeground="purple", font=('helvetica', 10, 'bold'))
+        button5 = tk.Button(self.window, text='Sport',width = 15, height = 3, bg="grey",fg="purple", activebackground="grey", activeforeground="purple", font=('helvetica', 13, 'bold'))
         button5.grid(row=0, column=0, sticky="E", padx=80)
 
-        button6 = tk.Button(self.window, text='abbigliamento',width = 15, height = 3, bg="grey",fg="purple", activebackground="grey", activeforeground="purple", font=('helvetica', 10, 'bold'))
+        button6 = tk.Button(self.window, text='abbigliamento',width = 15, height = 3, bg="grey",fg="purple", activebackground="grey", activeforeground="purple", font=('helvetica', 13, 'bold'))
         button6.grid(row=0, column=0, sticky="S", pady=10)
 
 window = tk.Tk() #! declare the window

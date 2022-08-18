@@ -1,10 +1,13 @@
+# #!
+
 from tkinter import *
-import tkinter as tk
+import tkinter as ttk
 
 class SecondWindow():
 
     def __init__(self, window2):
         """
+        ^
         """
         self.window2 = window2
 

@@ -1,4 +1,4 @@
-# #!
+#! generic window
 
 from tkinter import *
 import tkinter as tk
@@ -13,6 +13,9 @@ class SellWindow():
         self.window = window
         self.listaMateriali = listaMateriali
         self.listaPrezzi = listaPrezzi
+        self.grafica()
+        self.listBox()
+        self.button()
         #self.carrello = []
 
     def grafica(self):
@@ -24,7 +27,7 @@ class SellWindow():
         self.window.resizable(False, False) #! you cannot change the size of the window
         #self.window3.iconbitmap("icona.ico") #! icon window
 
-    def ListBox(self):
+    def listBox(self):
         """
         ^ listBox creation
         """

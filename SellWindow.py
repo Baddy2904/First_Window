@@ -13,12 +13,12 @@ class SellWindow():
         self.window = window
         self.listaMateriali = listaMateriali
         self.listaPrezzi = listaPrezzi
-        self.grafica()
-        self.listBox()
-        self.button()
+        self.__grafica()
+        self.__listBox()
+        self.__button()
         #self.carrello = []
 
-    def grafica(self):
+    def __grafica(self):
         """
         ^ function that deals with the graphics of the window
         """
@@ -27,7 +27,7 @@ class SellWindow():
         self.window.resizable(False, False) #! you cannot change the size of the window
         #self.window3.iconbitmap("icona.ico") #! icon window
 
-    def listBox(self):
+    def __listBox(self):
         """
         ^ listBox creation
         """
@@ -39,7 +39,7 @@ class SellWindow():
             lb1.insert(i, materiale)
         lb1.grid()
 
-    def button(self):
+    def __button(self):
         """
         ^ button creation
         """
@@ -61,6 +61,7 @@ class SellWindow():
             column=0,
             sticky="S",
             pady=40)
+
 
 #def carrello(self):
         

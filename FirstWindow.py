@@ -22,7 +22,7 @@ def finestraPagamento():
 
 def finestraAl():
     """
-    ^ secondWindow creation
+    ^ Window creation
     """
     title = "Alimentazione"
     listaMateriali = ["mela", "banana", "mela", "ciliegia", "pera", "mela", "pera", "pera",  "ciliegia", "pera", "fragola"]
@@ -33,7 +33,7 @@ def finestraAl():
 
 def finestraSport():
     """
-    ^ secondWindow creation
+    ^ Window creation
     """
     title = "Sport"
     listaMateriali = ["mela", "banana", "mela", "ciliegia", "pera", "mela", "pera", "pera",  "ciliegia", "pera", "fragola"]
@@ -44,7 +44,7 @@ def finestraSport():
 
 def finestraAbb():
     """
-    ^ secondWindow creation
+    ^ Window creation
     """
     title = "Abbigliamento"
     listaMateriali = ["mela", "banana", "mela", "ciliegia", "pera", "mela", "pera", "pera",  "ciliegia", "pera", "fragola"]
